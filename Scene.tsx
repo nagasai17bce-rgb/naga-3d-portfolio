@@ -113,8 +113,8 @@ function Avatar3D() {
     <group ref={group} position={[3, .55, -.35]}>
       <Float speed={1.25} rotationIntensity={.1} floatIntensity={.2}>
         {[.08, .03, 0].map((z, i) => (
-          <group key={i} position={[i * .025, i * .018, z]}>
-            <DreiImage url="/naga-portrait.png" transparent opacity={i === 2 ? .96 : .12} scale={[2.2 + i * .06, 2.82 + i * .08]} />
+          <group key={i} position={new THREE.Vector3(i * .025, i * .018, z)}>
+            <DreiImage url="/naga-portrait.png" transparent opacity={i === 2 ? .96 : .12} scale={2.5} />
           </group>
         ))}
         <mesh position={[0, 0, -.05]}>
