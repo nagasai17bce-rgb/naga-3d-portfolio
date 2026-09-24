@@ -1,18 +1,20 @@
 # Naga Sai — 3D AI Portfolio
 
-A premium, procedural 3D portfolio built with React, TypeScript, Vite, Three.js and React Three Fiber.
+A clean, static 3D portfolio inspired by the scroll-driven architecture and visual language of `sen-3d-resume`.
 
-## Deploy
+## Important
+- This rebuild intentionally does not include the original project's personal model, logos, or personal assets.
+- The 3D layer is implemented with Three.js directly to keep the build stable and remove the TypeScript/R3F prop typing issue that caused the previous Vercel failures.
+- No image upload or face-photo implementation is used.
 
-This project is ready for Vercel. The repository root is the Vite app.
+## Build
 
-- Framework: Vite
-- Build command: `npm run build`
-- Output directory: `dist`
-- Install command: `npm install`
+```bash
+npm run build
+```
 
-Push changes to GitHub and Vercel will redeploy automatically when the repository is connected.
+The output is `dist/` and is ready for Vercel/static hosting.
 
-## Customize
+## Vercel / GitHub
 
-Edit `src/data/content.ts` for experience, projects, links and skills.
+Keep the repository root as this project. Vercel's build command is `npm run build`, and the output directory can be `dist`.
